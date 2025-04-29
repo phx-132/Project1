@@ -72,6 +72,18 @@ class Television:
             if self.__volume > Television.MIN_VOLUME:
                 self.__volume -= 1
     
+    def get_status(self):
+        return self.__status
+    
+    def get_volume(self):
+        return self.__volume
+    
+    def get_channel(self):
+        return self.__channel
+    
+    def get_muted(self):
+        return self.__muted
+    
     def __str__(self) -> str:
         '''
         Method to show Television status, channel, and volume
